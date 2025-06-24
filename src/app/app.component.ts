@@ -6,7 +6,7 @@ import { Observable, interval, map, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-root',
-  templateUrl:'./app.component.html',
+  templateUrl: './app.component.html',
   standalone: true,
   styleUrl: './app.component.css',
   imports: [ CommonModule, FormsModule, HttpClientModule]
@@ -117,7 +117,7 @@ clearInputAndResponse() {
   this.messages = [];
   // this.screenResponse = '<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="Loading" width="100" height="100">';
 this.screenResponse = `
-    <img src="https://pouch.jumpshare.com/preview/jQctWMopcrxmVk3AdJwYu6n46Nmv-B0s4vj4nrn91J3OJFu2EWGUD6ZPmfJn-vXE6qdIOKzgymit7LBSWuiDmTdY3a5zjdvsKcjgFEwEYLQ"
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWhtYmJpc3Fva25vMmF2ZG5mYTBhYmNseXdldzJvbnJ3NGJkaWY4OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VLxsKOM1epzL8uWwCq/giphy.gif"
          alt="Loading" width="175" height="100" >
 `;
 
