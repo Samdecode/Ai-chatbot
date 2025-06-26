@@ -11,12 +11,11 @@
 }
 
 .container .left-panel {
-  width: 250px;
+  width: 30%;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #000000;
-                          
-                   
+  border-right: 1px solid #000000;         
 }
 
 .container .left-panel header {
@@ -36,10 +35,6 @@
   align-items: center;
   padding: 10px;
 }
-
-
-
-
 .container .left-panel .history {
   flex: 1;
   overflow-y: auto;
@@ -84,7 +79,7 @@
 }
 
 .container .main-content .company-icon {
-  margin: 0 auto; /* Center align the company icon */
+  margin: auto;
 }
 
 .container .main-content .response-area {
@@ -93,7 +88,6 @@
   overflow-y: auto;
   background-color: #ffffff;
   white-space: pre-wrap;
-  /* display: inline-block; Avoid block-level spacing */
 
 }
 
@@ -113,10 +107,7 @@
   height: 30px;
   border-style: none;
   background-color: rgb(230, 238, 238);
-  
 }
-
-/* From Uiverse.io by alexruix */ 
 .group {
  display: flex;
  line-height: 28px;
@@ -162,20 +153,11 @@
  width: 1rem;
  height: 1rem;
 }
-/*.container .main-content .input-area button {
-  padding: 10px 20px;
-  margin-left: 10px;
-  border: none;
-  background-color: #007bff;
-  color: rgb(255, 255, 255);
-  border-radius: 4px;
-  cursor: pointer;
-} */
 
 .container .company-name {
-  font-size: 18px; /* Larger font size for company name */
-  font-weight: bold; /* Bold font for emphasis */
-  margin-bottom: 5px; /* Margin bottom for spacing */
+  font-size: 18px; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
   text-align: center;
   display: inline-block;
   vertical-align: middle;
@@ -246,23 +228,17 @@
   font-size: 25px;
   word-wrap: break-word;
 }
-
-/* From Uiverse.io by OnCloud125252 */ 
-/* Note that you only needs to edit the config to customize the button! */
-
 .plusButton {
-  /* Config start */
   --plus_sideLength: 2.5rem;
   --plus_topRightTriangleSideLength: 0.9rem;
-  /* Config end */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+  border: 2px solid rgb(0, 0, 0);
   width: var(--plus_sideLength);
   height: var(--plus_sideLength);
-  background-color: #000000;
+  background-color: #ffffff;
   overflow: hidden;
 }
 
@@ -275,7 +251,7 @@
   height: 0;
   border-width: 0 var(--plus_topRightTriangleSideLength) var(--plus_topRightTriangleSideLength) 0;
   border-style: solid;
-  border-color: transparent white transparent transparent;
+  border-color: transparent rgb(0, 0, 0) transparent transparent;
   transition-timing-function: ease-in-out;
   transition-duration: 0.2s;
 }
@@ -293,7 +269,7 @@
 }
 
 .plusButton>.plusIcon {
-  fill: white;
+  fill: rgb(0, 0, 0);
   width: calc(var(--plus_sideLength) * 0.7);
   height: calc(var(--plus_sideLength) * 0.7);
   z-index: 1;
@@ -302,12 +278,12 @@
 }
 
 .plusButton:hover>.plusIcon {
-  fill: black;
+  fill: rgb(255, 255, 255);
   transform: rotate(180deg);
 }
 
 .plusButton:focus-visible>.plusIcon {
-  fill: black;
+  fill: rgb(0, 0, 0);
   transform: rotate(180deg);
 }
 
@@ -322,9 +298,6 @@ textarea {
   overflow: hidden; /* hides scrollbar */
   box-sizing: border-box;
 }
-
-
-/* From Uiverse.io by gharsh11032000 */ 
 .animated-button {
   position: relative;
   display: flex;
