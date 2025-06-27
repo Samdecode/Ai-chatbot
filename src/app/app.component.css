@@ -35,6 +35,9 @@
   align-items: center;
   padding: 10px;
 }
+.company-icon{
+  width: 200px;
+}
 .container .left-panel .history {
   flex: 1;
   overflow-y: auto;
